@@ -9,16 +9,20 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
+    private let refreshControl = UIRefreshControl()
+    
     private var photosViewModel: PhotosViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.photosViewModel = PhotosViewModel()
+        setupPullToRefresh()
         
         // Bind the View Controller to the ViewModel to update its views when the ViewModel is updated
         self.photosViewModel.updateForBinded = {
             DispatchQueue.main.async { [weak self] in
+                self?.refreshControl.endRefreshing()
                 self?.collectionView.reloadData()
             }
         }
@@ -33,6 +37,24 @@ class PhotosCollectionViewController: UICollectionViewController {
     deinit {
         self.photosViewModel.updateForBinded = nil
         self.photosViewModel = nil
+    }
+    
+    private func setupPullToRefresh() {
+        if #available(iOS 10.0, *) {
+            self.collectionView.refreshControl = refreshControl
+        } else {
+            self.collectionView.addSubview(refreshControl)
+        }
+        
+        refreshControl.addTarget(self, action: #selector(refreshPhotoData(_:)), for: .valueChanged)
+    }
+    
+    @objc private func refreshPhotoData(_ sender: Any) {
+        photosViewModel.refreshData()
+        self.photosViewModel.getNextPageOfPhotoData { [weak self] error in
+            guard let error = error else { return }
+            self?.showErrorAlert(error: error)
+        }
     }
     
     private func showErrorAlert(error: Error) {

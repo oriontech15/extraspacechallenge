@@ -34,6 +34,11 @@ class PhotosViewModel: NSObject {
         self.apiService = APIService()
     }
     
+    func refreshData() {
+        self.currentPage = 0
+        self.nextPage = 1
+    }
+    
     /// Gets the next page of photo data based upon the current page,
     /// the total number of fetched pages and the pageSize. (Pagination)
     ///
