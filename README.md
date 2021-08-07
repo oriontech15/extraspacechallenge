@@ -7,6 +7,7 @@
 - [x] Requests the next page of photos once the user scolls to the bottom
 - [x] Caches the photos and retrieves the cached photos for a smoother scrolling experience
 - [x] Works on iPad and iPhone (Universal) in both landscape and portrait orientations
+- [x] Pull to refresh enabled
 - [x] Test coverage for pagination and image caching
 
 ## Requirements
