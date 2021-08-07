@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		DB7F0CD626BE1FEA0077DC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CD526BE1FEA0077DC01 /* AppDelegate.swift */; };
 		DB7F0CD826BE1FEA0077DC01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CD726BE1FEA0077DC01 /* SceneDelegate.swift */; };
-		DB7F0CDA26BE1FEA0077DC01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CD926BE1FEA0077DC01 /* ViewController.swift */; };
+		DB7F0CDA26BE1FEA0077DC01 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CD926BE1FEA0077DC01 /* PhotosCollectionViewController.swift */; };
 		DB7F0CDD26BE1FEA0077DC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7F0CDB26BE1FEA0077DC01 /* Main.storyboard */; };
 		DB7F0CDF26BE1FEB0077DC01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7F0CDE26BE1FEB0077DC01 /* Assets.xcassets */; };
 		DB7F0CE226BE1FEB0077DC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7F0CE026BE1FEB0077DC01 /* LaunchScreen.storyboard */; };
-		DB7F0CED26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CEC26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift */; };
+		DB7F0CED26BE1FEB0077DC01 /* PhotoRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CEC26BE1FEB0077DC01 /* PhotoRequestTests.swift */; };
 		DB7F0CF826BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CF726BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.swift */; };
+		DB7F0D0626BE215B0077DC01 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D0526BE215B0077DC01 /* Photo.swift */; };
+		DB7F0D0A26BE25310077DC01 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D0926BE25310077DC01 /* PhotosViewModel.swift */; };
+		DB7F0D0E26BE256B0077DC01 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D0D26BE256B0077DC01 /* APIService.swift */; };
+		DB7F0D1026BE2E040077DC01 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D0F26BE2E040077DC01 /* PhotoCollectionViewCell.swift */; };
+		DB7F0D1526BE4C0A0077DC01 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D1426BE4C0A0077DC01 /* ImageExtensions.swift */; };
+		DB7F0D1C26BEED7A0077DC01 /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D1B26BEED7A0077DC01 /* ImageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +44,23 @@
 		DB7F0CD226BE1FE90077DC01 /* ExtraSpaceChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtraSpaceChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7F0CD526BE1FEA0077DC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB7F0CD726BE1FEA0077DC01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB7F0CD926BE1FEA0077DC01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB7F0CD926BE1FEA0077DC01 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		DB7F0CDC26BE1FEA0077DC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB7F0CDE26BE1FEB0077DC01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB7F0CE126BE1FEB0077DC01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB7F0CE326BE1FEB0077DC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7F0CE826BE1FEB0077DC01 /* ExtraSpaceChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtraSpaceChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB7F0CEC26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSpaceChallengeTests.swift; sourceTree = "<group>"; };
+		DB7F0CEC26BE1FEB0077DC01 /* PhotoRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequestTests.swift; sourceTree = "<group>"; };
 		DB7F0CEE26BE1FEB0077DC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7F0CF326BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtraSpaceChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7F0CF726BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSpaceChallengeUITests.swift; sourceTree = "<group>"; };
 		DB7F0CF926BE1FEB0077DC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7F0D0526BE215B0077DC01 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		DB7F0D0926BE25310077DC01 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		DB7F0D0D26BE256B0077DC01 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DB7F0D0F26BE2E040077DC01 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB7F0D1426BE4C0A0077DC01 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		DB7F0D1B26BEED7A0077DC01 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,15 @@
 		DB7F0CD426BE1FEA0077DC01 /* ExtraSpaceChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				DB7F0CD526BE1FEA0077DC01 /* AppDelegate.swift */,
-				DB7F0CD726BE1FEA0077DC01 /* SceneDelegate.swift */,
-				DB7F0CD926BE1FEA0077DC01 /* ViewController.swift */,
-				DB7F0CDB26BE1FEA0077DC01 /* Main.storyboard */,
-				DB7F0CDE26BE1FEB0077DC01 /* Assets.xcassets */,
-				DB7F0CE026BE1FEB0077DC01 /* LaunchScreen.storyboard */,
-				DB7F0CE326BE1FEB0077DC01 /* Info.plist */,
+				DB7F0D1626BE4C600077DC01 /* Supporting Files */,
+				DB7F0D1926BE4D090077DC01 /* Resources */,
+				DB7F0D0726BE21620077DC01 /* Model */,
+				DB7F0D0826BE251A0077DC01 /* ViewModels */,
+				DB7F0D1826BE4CEB0077DC01 /* ViewControllers */,
+				DB7F0D1A26BE4D1B0077DC01 /* CustomCells */,
+				DB7F0D1726BE4CDE0077DC01 /* Storyboards */,
+				DB7F0D1326BE4BE30077DC01 /* Utility Extensions */,
+				DB7F0D0B26BE25480077DC01 /* Services */,
 			);
 			path = ExtraSpaceChallenge;
 			sourceTree = "<group>";
@@ -113,8 +127,9 @@
 		DB7F0CEB26BE1FEB0077DC01 /* ExtraSpaceChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB7F0CEC26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift */,
+				DB7F0CEC26BE1FEB0077DC01 /* PhotoRequestTests.swift */,
 				DB7F0CEE26BE1FEB0077DC01 /* Info.plist */,
+				DB7F0D1B26BEED7A0077DC01 /* ImageTests.swift */,
 			);
 			path = ExtraSpaceChallengeTests;
 			sourceTree = "<group>";
@@ -126,6 +141,81 @@
 				DB7F0CF926BE1FEB0077DC01 /* Info.plist */,
 			);
 			path = ExtraSpaceChallengeUITests;
+			sourceTree = "<group>";
+		};
+		DB7F0D0726BE21620077DC01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0D0526BE215B0077DC01 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB7F0D0826BE251A0077DC01 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0D0926BE25310077DC01 /* PhotosViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DB7F0D0B26BE25480077DC01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0D0D26BE256B0077DC01 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DB7F0D1326BE4BE30077DC01 /* Utility Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0D1426BE4C0A0077DC01 /* ImageExtensions.swift */,
+			);
+			path = "Utility Extensions";
+			sourceTree = "<group>";
+		};
+		DB7F0D1626BE4C600077DC01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0CD526BE1FEA0077DC01 /* AppDelegate.swift */,
+				DB7F0CD726BE1FEA0077DC01 /* SceneDelegate.swift */,
+				DB7F0CE326BE1FEB0077DC01 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB7F0D1726BE4CDE0077DC01 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0CDB26BE1FEA0077DC01 /* Main.storyboard */,
+				DB7F0CE026BE1FEB0077DC01 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DB7F0D1826BE4CEB0077DC01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0CD926BE1FEA0077DC01 /* PhotosCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB7F0D1926BE4D090077DC01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0CDE26BE1FEB0077DC01 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DB7F0D1A26BE4D1B0077DC01 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0D0F26BE2E040077DC01 /* PhotoCollectionViewCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7F0CDA26BE1FEA0077DC01 /* ViewController.swift in Sources */,
+				DB7F0CDA26BE1FEA0077DC01 /* PhotosCollectionViewController.swift in Sources */,
 				DB7F0CD626BE1FEA0077DC01 /* AppDelegate.swift in Sources */,
+				DB7F0D0A26BE25310077DC01 /* PhotosViewModel.swift in Sources */,
+				DB7F0D1526BE4C0A0077DC01 /* ImageExtensions.swift in Sources */,
+				DB7F0D0626BE215B0077DC01 /* Photo.swift in Sources */,
+				DB7F0D1026BE2E040077DC01 /* PhotoCollectionViewCell.swift in Sources */,
+				DB7F0D0E26BE256B0077DC01 /* APIService.swift in Sources */,
 				DB7F0CD826BE1FEA0077DC01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +363,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7F0CED26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift in Sources */,
+				DB7F0CED26BE1FEB0077DC01 /* PhotoRequestTests.swift in Sources */,
+				DB7F0D1C26BEED7A0077DC01 /* ImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4637N428EN;
-				INFOPLIST_FILE = ExtraSpaceChallenge/Info.plist;
+				INFOPLIST_FILE = "ExtraSpaceChallenge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +553,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4637N428EN;
-				INFOPLIST_FILE = ExtraSpaceChallenge/Info.plist;
+				INFOPLIST_FILE = "ExtraSpaceChallenge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
