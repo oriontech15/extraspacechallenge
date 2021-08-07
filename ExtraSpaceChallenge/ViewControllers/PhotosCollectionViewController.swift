@@ -44,6 +44,10 @@ class PhotosCollectionViewController: UICollectionViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        self.collectionView.reloadData()
+    }
 }
 
 extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
@@ -77,10 +81,15 @@ extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
         // Right padding = 20
         // minimum 10 points of space between cells
         // We want 4 cells across so that means there will be 3 spaces
-        // 20 + 20 + (10 * 3) = 70
+        // 20 + 20 + (10 * 3) = 70 (portrait)
         
-        let length = (self.view.bounds.width - 70) / 4
-        return CGSize(width: length, height: length)
+        if UIDevice.current.orientation.isLandscape {
+            let length = (self.view.bounds.width - 90) / 6
+            return CGSize(width: length, height: length)
+        } else {
+            let length = (self.view.bounds.width - 70) / 4
+            return CGSize(width: length, height: length)
+        }
     }
 }
 
