@@ -15,6 +15,7 @@
 		DB7F0CE226BE1FEB0077DC01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7F0CE026BE1FEB0077DC01 /* LaunchScreen.storyboard */; };
 		DB7F0CED26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CEC26BE1FEB0077DC01 /* ExtraSpaceChallengeTests.swift */; };
 		DB7F0CF826BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0CF726BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.swift */; };
+		DB7F0D0626BE215B0077DC01 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F0D0526BE215B0077DC01 /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DB7F0CF326BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtraSpaceChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7F0CF726BE1FEB0077DC01 /* ExtraSpaceChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraSpaceChallengeUITests.swift; sourceTree = "<group>"; };
 		DB7F0CF926BE1FEB0077DC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7F0D0526BE215B0077DC01 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DB7F0CDE26BE1FEB0077DC01 /* Assets.xcassets */,
 				DB7F0CE026BE1FEB0077DC01 /* LaunchScreen.storyboard */,
 				DB7F0CE326BE1FEB0077DC01 /* Info.plist */,
+				DB7F0D0726BE21620077DC01 /* Model */,
 			);
 			path = ExtraSpaceChallenge;
 			sourceTree = "<group>";
@@ -126,6 +129,14 @@
 				DB7F0CF926BE1FEB0077DC01 /* Info.plist */,
 			);
 			path = ExtraSpaceChallengeUITests;
+			sourceTree = "<group>";
+		};
+		DB7F0D0726BE21620077DC01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F0D0526BE215B0077DC01 /* PhotoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				DB7F0CDA26BE1FEA0077DC01 /* ViewController.swift in Sources */,
 				DB7F0CD626BE1FEA0077DC01 /* AppDelegate.swift in Sources */,
+				DB7F0D0626BE215B0077DC01 /* PhotoModel.swift in Sources */,
 				DB7F0CD826BE1FEA0077DC01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
